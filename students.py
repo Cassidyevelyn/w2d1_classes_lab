@@ -1,14 +1,17 @@
 class Student:
 
-    def __init__(self, input_holder_name, cohort_num):
-        self.holder_name = input_holder_name 
-        self.cohort = cohort_num
+    def __init__(self, name, cohort):
+        self.name = name 
+        self.cohort = cohort
     
     def talk(self):
-        return "I can talk"
+        return "I can talk!"
     
-    def say_favourite_language(self):
-        return "I love Python!"
+    def what_cohort(self):
+        return "I am in cohort " + self.cohort
+    
+    def say_favourite_language(self, language):
+        return "I love " + language
 
 
 
